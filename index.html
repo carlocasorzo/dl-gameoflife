@@ -1,29 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Game of Life</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
 
 </head>
 <body>
-    
-        <main>
-            <div class="container">
-                <canvas id="game-canvas" width="300" height="300"></canvas>
-            </div>
-        </main>
-    
+    <div id="main-wrapper">
+        <div class="container" id="canvas-container">
+            <canvas id="game-canvas" width="300" height="300"></canvas>
+            <button id="step">Step</button>
+        </div>
+    </div>
     
     <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="js/lifeboard.js"></script>
+    <script src="js/lifecanvas.js"></script>
+    <script src="js/buttonlistener.js"></script>
+    <script src="js/init.js"></script>
     
-    <script>
-        console.log(new LifeBoard(5, true));
-    </script>
+    
 </body>
 </html>
